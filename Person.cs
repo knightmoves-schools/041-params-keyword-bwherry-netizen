@@ -5,8 +5,9 @@ public class Person{
    public string LastName;
    public string[] Hobbies;
 
-   public Person(string firstName, string lastName){
+   public Person(string firstName, string lastName, params string[] addHobbies){
       FirstName = firstName;
       LastName = lastName;
+      Hobbies = addHobbies;
    }
 }
